@@ -1,0 +1,295 @@
+<html>
+    <head>
+        <title>Web Development Cheat Sheet</title>
+        <link href='styles.css' type="css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <h1>Web Development Cheatsheet</h1>
+            <nav>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h2>HTML Cheatsheet</h2>
+            <table>
+                <caption>HTML table tags</caption>
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;table&gt;</td>
+                        <td>This is the main container for creating a table. It defines the beginning and end of a table.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;tr&gt;</td>
+                        <td>This stands for "table row". It defines a row in the table and contains one or more cells.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;th&gt;</td>
+                        <td>This stands for "table header". It is used to define a header cell in the table. The text in a header cell is usually bold and centered by default.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;td&gt;</td>
+                        <td>This stands for "table data". It defines a regular cell in the table and contains the actual data to be displayed.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;thead&gt;</td>
+                        <td>This tag is used to group the header content in a &lt;table&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;tbody&gt;</td>
+                        <td>This tag is used to group the body content in a &lt;table&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;tfoot&gt;</td>
+                        <td>This tag is used to group the footer content in a &lt;table&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;caption&gt;</td>
+                        <td>This tag is used to add a caption for the table, which is displayed above or below the table.</td>
+                    </tr>
+                    <tr>
+                        <td>colspan and rowspan attributes</td>
+                        <td>These attributes are used to specify how many columns or rows a table cell should span, respectively. It allows you to merge cells horizontally or vertically.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;colgroup&gt;</td>
+                        <td>This element allows you to group one or more columns together and apply styles to them as a group.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;col&gt;</td>
+                        <td>This element is used inside &lt;colgroup&gt; and it represents a column within a table.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <caption>HTML table attribute</caption>
+                <thead>
+                  <tr>
+                    <th>Attribute</th>
+                    <th>description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>border</td>
+                    <td>Specifies the width of the border around the table</td>
+                  </tr>
+                  <tr>
+                    <td>cellspacing</td>
+                    <td>Specifies the space between cells in the table</td>
+                  </tr>
+                  <tr>
+                    <td>cellpadding</td>
+                    <td>Specifies the space between the cell content and the cell border</td>
+                  </tr>
+                  <tr>
+                    <td>width</td>
+                    <td>Specifies the width of the table</td>
+                  </tr>
+                  <tr>
+                    <td>height</td>
+                    <td>Specifies the height of the table</td>
+                  </tr>
+                  <tr>
+                    <td>align</td>
+                    <td>Specifies the horizontal alignment of the table</td>
+                  </tr>
+                  <tr>
+                    <td>valign</td>
+                    <td>Specifies the vertical alignment of the table</td>
+                  </tr>
+                  <tr>
+                    <td>caption</td>
+                    <td>Specifies a caption for the table</td>
+                  </tr>
+                  <tr>
+                    <td>summary</td>
+                    <td>Provides a summary of the table's structure</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+            <form action="/submit-form" method="post">
+                <a>Example form</a><br>
+                <label for="name">name</label>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br>
+                <input type="submit" value="Submit">
+            </form>
+            <table>
+                <caption>HTML Form Tags</caption>
+                <tr>
+                  <th>Tag</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
+                  <td><code>&lt;form&gt;</code></td>
+                  <td>The main container for creating a form. It defines the beginning and end of a form and it contains various controls such as text fields, checkboxes, and buttons.</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;input&gt;</code></td>
+                  <td>The most versatile form control and it is used to create various types of form controls, such as text fields, checkboxes, radio buttons, and buttons.</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;label&gt;</code></td>
+                  <td>This tag is used to provide a text description for a form control. It is associated with the control using the "for" attribute, which should match the "id" attribute of the control.</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;select&gt;</code></td>
+                  <td>This tag is used to create a drop-down list of options for the user to select from.</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;option&gt;</code></td>
+                  <td>This tag is used within a `&lt;select&gt;` element to define the options in the drop-down list.</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;textarea&gt;</code></td>
+                  <td>This tag is used to create a multi-line text input field. It contains the `cols` and `rows` attribute to specify the number of columns and rows.</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;fieldset&gt;</code></td>
+                  <td>This tag is used to group related form controls and apply styles to them as a group.</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;legend&gt;</code></td>
+                  <td>This tag is used to provide a caption for a fieldset element, which is displayed as a label for the group of controls.</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;button&gt;</code></td>
+                  <td>Creates a clickable button. It can be used to trigger JavaScript events.</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;datalist&gt;</code></td>
+                  <td>This tag is used to create a list of options that can be used with an <code>&lt;input&gt;</code> element as a pre-defined list of possible values for the input field.</td>
+                </tr>
+                <tr>
+                  <td><code>&lt;output&gt;</code></td>
+                  <td>This tag is used to display the result of a calculation.</td>
+                </tr>
+             </table>
+              
+            <table>
+                <caption>Form Attribute</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Tag</th>
+                        <th scope="col">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>action</td>
+                        <td>This attribute specifies the URL of the server-side script that will process the form data. It is used to indicate where the data should be sent when the form is submitted.</td>
+                    </tr>
+                    <tr>
+                        <td>method</td>
+                        <td>This attribute specifies how the form data should be submitted to the server. The two most commonly used values for this attribute are "GET" and "POST". GET is used for sending data to the server in the form of query parameters, while POST is used for sending data in the message body of the request.</td>
+                    </tr>
+                    <tr>
+                        <td>target</td>
+                        <td>This attribute is used to specify where to display the response that is received after submitting the form. For example, you can use the value "_blank" to open the response in a new window or tab.</td>
+                    </tr>
+                    <tr>
+                        <td>name</td>
+                        <td>this attribute is used to specify a name for the form and can be used to reference the form in JavaScript code.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <caption>Form Input Attribute</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Tag</th>
+                        <th scope="col">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>text</td>
+                        <td>Creates a single-line text field. This is the default input type.</td>
+                    </tr>
+                    <tr>
+                        <td>password</td>
+                        <td>Creates a single-line text field, but the input is obscured, so that the entered text is not visible on the screen.</td>
+                    </tr>
+                    <tr>
+                        <td>checkbox</td>
+                        <td> Creates a checkbox control. The user can select or deselect the checkbox to indicate a true or false value.</td>
+                    </tr>
+                    <tr>
+                        <td>radio</td>
+                        <td>Creates a radio button. The user can select one option from a group of related options.</td>
+                    </tr>
+                    <tr>
+                        <td>submit</td>
+                        <td>Creates a submit button. When clicked, the form data is sent to the server for processing.</td>
+                    </tr>
+                    <tr>
+                        <td>reset</td>
+                        <td>Creates a reset button. When clicked, the form data is cleared.</td>
+                    </tr>
+                    <tr>
+                        <td>image</td>
+                        <td>Creates an image as a submit button. When clicked, the form data is sent to the server for processing.</td>
+                    </tr>
+                    <tr>
+                        <td>button</td>
+                        <td>Creates a clickable button. It can be used to trigger JavaScript events.</td>
+                    </tr>
+                    <tr>
+                        <td>hidden</td>
+                        <td>Creates a hidden field. The value of the field is not visible to the user and is sent to the server with the form data.</td>
+                    </tr>
+                    <tr>
+                        <td>file</td>
+                        <td>Creates a file picker that allows the user to select a file to be uploaded to the server.</td>
+                    </tr>
+                    <tr>
+                        <td>number</td>
+                        <td>Creates a text field that accepts numeric input only</td>
+                    </tr>
+                    <tr>
+                        <td>range</td>
+                        <td>Creates a slider control that allows the user to select a value within a given range.</td>
+                    </tr>
+                    <tr>
+                        <td>color</td>
+                        <td>Creates a color picker that allows the user to select a color.</td>
+                    </tr>
+                    <tr>
+                        <td>date</td>
+                        <td>Creates a date picker that allows the user to select a date.</td>
+                    </tr>
+                    <tr>
+                        <td>email</td>
+                        <td>Creates a text field that accepts email address and check for the email pattern.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            tel
+                        </td>
+                        <td>Creates a text field that accepts telephone number.</td>
+                </tr>
+                <tr>
+                    <td>url</td>
+                    <td>Creates a text field that accepts URL and check for the url pattern.</td>
+                </tr>
+                </tbody>
+            </table>
+
+
+        </main>
+    </body>
+</html>
