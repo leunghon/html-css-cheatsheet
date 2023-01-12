@@ -2,18 +2,15 @@ body {
     background-color: cadetblue;
 }
 
-table,
-th,
-td {
-    border: 1px solid;
-}
 
 table {
     width: 100%;
     height: auto;
     margin: 0 auto;
+    padding: 10px;
     display: inline-block;
     overflow-x: auto;
-    border-spacing: 0;
+    border: 2px solid;
+    border-spacing: 0.75em;
     text-align: center;
   }
